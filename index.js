@@ -10,7 +10,10 @@ const merry = require('merry')
 const level = require('level')
 const path = require('path')
 
-const env = envobj({ KEY: String })
+const env = envobj({
+  KEY: String,
+  PORT: 8080
+})
 const feed = normcore(env.KEY)
 const getLogHead = getProdLoghead(feed)
 
@@ -38,7 +41,7 @@ app.router([
   }]
 ])
 
-listen(8080, app.start())
+listen(env.PORT, app.start())
 
 function getProdLoghead (feed) {
   const db = level('/tmp/dat-land-dashboard.db', { valueEncoding: 'json' })

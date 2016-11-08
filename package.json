@@ -20,7 +20,6 @@
     "level": "^1.5.0",
     "merry": "^2.0.2",
     "normcore": "^1.0.2",
-    "relative-time": "0.0.4",
     "tachyons": "^4.5.4",
     "time-ago": "^0.1.0",
     "xhr": "^2.2.2",

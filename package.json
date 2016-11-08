@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "dependency-check": "^2.6.0",
+    "nodemon": "^1.11.0",
     "standard": "^8.5.0",
     "standard-markdown": "^2.2.0"
   }
